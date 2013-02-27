@@ -79,7 +79,7 @@
                         [self.headersAndFooters addObject:@[@"", @""]];
                         [self.settings addObject:[NSMutableArray array]];
                     }
-                    [[self.settings lastObject] addObject:settingsSpecifier];
+                    [((NSMutableArray*)[self.settings lastObject]) addObject:settingsSpecifier];
                 }
             }
         }];
